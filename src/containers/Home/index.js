@@ -3,6 +3,7 @@ import './index.scss';
 import Phone from "../../assets/images/phone.svg";
 import Mail from "../../assets/images/mail.svg";
 import LinkedIn from "../../assets/images/linkedin.svg"
+import Spotify from "../../assets/images/spotify.svg"
 
 const Home = () => {
   const shortenText = (label, len) => {
@@ -31,7 +32,7 @@ const Home = () => {
               <div className="experience-wrapper">
                 {gallery.experience.map((exp, index, all) => (
                   <div className={`experience ${all.length-1 > index? "isNotLast" : ""}`}>
-                    <img src={Mail} alt="mail" />
+                    <img src={Spotify} alt="mail" />
                     <span>{shortenText(exp, 42)}</span>
                   </div>
                 ))}
@@ -42,7 +43,7 @@ const Home = () => {
               <div className="experience-wrapper">
                 {gallery.education.map((exp, index, all) => (
                   <div className={`experience ${all.length-1 > index? "isNotLast" : ""}`}>
-                    <img src={Mail} alt="mail" />
+                    <img src={Spotify} alt="mail" />
                     <span>{shortenText(exp, 40)}</span>
                   </div>
                 ))}
