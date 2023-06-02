@@ -131,5 +131,23 @@ const Galleries =
       education: [
         "Stanford University, M.S., Computer Science Opera Group"
       ]
+    },
+    {
+      name: "James Hiddleston",
+      first_name: "James",
+      last_name: "Hiddleston",
+      current_title: "Machine Learning Engineer",
+      location: "San Francisco Bay Area",
+      phone_number: "+18888888",
+      personal_email: "hiddle@work.email",
+      linkedIn: "https://linkedin/jameshiddelston",
+      experience: [
+        "Senior Machin Learning Engineer at Google Opera",
+        "Junior Machine Learning Engineer at Spoity Junior Group",
+        
+      ],
+      education: [
+        "Stanford University, M.S., Computer Science Opera Group"
+      ]
     }
   ]
