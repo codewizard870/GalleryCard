@@ -186,12 +186,14 @@
     }
     .map {
       margin-top: 64px;
+      margin-left: 64px;
+      margin-right: 64px;
       height: 80vh;
     }
   }
   .info-wrapper {
     display: flex;
-    margin: 96px 64px 0px 64px;
+    margin: 96px 128px 0px 128px;
     padding-bottom: 64px;
     gap: 156px;
 
