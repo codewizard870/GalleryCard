@@ -56,7 +56,9 @@ const Photos = () => {
         <div>
           <div className="photo first">
             <img src={Photo1} alt="photo1" />
-            <button>Get Directions</button>
+            <a href="https://www.google.com/maps/dir//'50.110182,8.6871885'" target="_blank" rel="noreferrer">
+              <button>Get Directions</button>
+            </a>
           </div>
         </div>
         <div>

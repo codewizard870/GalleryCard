@@ -5,6 +5,7 @@ import Hero from './hero';
 import Photos from './photos';
 import AboutUs from './about-us';
 import Map from './map';
+import Info from './info';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Photos />
       <AboutUs />
       <Map />
+      <Info />
     </div>
   )
 }

@@ -10,7 +10,9 @@ const Navbar = () => {
       <div className="navbar-menu-section">
         {Menus.map((menu, index) => (
           <div className="menu" key={index}>
-            <span>{menu.label}</span>
+            <a href={menu.href}>
+              <span>{menu.label}</span>
+            </a>
           </div>
         ))}
       </div>
@@ -22,12 +24,15 @@ export default Navbar;
 
 const Menus = [
   {
-    label: "HOME"
+    label: "HOME",
+    href: "/"
   },
   {
-    label: "ABOUT US"
+    label: "ABOUT US",
+    href: "/#about-us"
   },
   {
-    label: "FIND US"
+    label: "FIND US",
+    href: "https://www.google.com/maps/dir//'50.110182,8.6871885'"
   }
 ]

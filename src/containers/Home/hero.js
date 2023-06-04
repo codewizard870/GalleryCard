@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="hero-wrapper">
       <h1 className="hero-title">
-        THE HOLY<br/>
+        THE HOLY<br />
         <span>CROSS</span> BREWING SOCIETY
       </h1>
       <div className="hero-position">
@@ -21,7 +21,11 @@ const Hero = () => {
       </div>
       <div className="hero-buttons">
         <button className="contact-us">Contact Us</button>
-        <button className="directions">Get Directions</button>
+        <a href="https://www.google.com/maps/dir//'50.110182,8.6871885'" target="_blank" rel="noreferrer">
+          <button className="directions">
+            Get Directions
+          </button>
+        </a>
       </div>
     </div>
   )
