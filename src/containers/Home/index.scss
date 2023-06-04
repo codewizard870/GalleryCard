@@ -1,171 +1,180 @@
 @import "../../assets/scss/variables.scss";
 
 .home-wrapper {
-  background: $gray;
-  min-height: 100vh;
-  color: $black;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 16px;
-  
-  .card-wrapper {
+  background: $black;
+  color: $white;
+  .navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
     background: $white;
-    border-radius: 10px;
-    padding: 32px 32px 32px 48px;
-    max-width: 50%;
-    @media screen and (max-width: 767px) {
-      max-width: 100%;
-    }
+    color: $black;
 
-    .card-header {
+    .navbar-logo-section {
       display: flex;
-      flex-direction: column;
-      padding-bottom: 16px;
-      border-bottom: 1px solid $gray;
-      gap: 10px;
-
-      .card-upper-section {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-
-        .name {
+      align-items: center;
+      img {
+        width: 84px;
+      }
+      span {
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+    .navbar-menu-section {
+      display: flex;
+      gap: 32px;
+      .menu {
+        span {
           font-size: 24px;
-          font-style: italic;
-          @media screen and (max-width: 767px) {
-            font-size: 16px;
+        }
+      }
+    }
+  }
+  .hero-wrapper {
+    background-image: url("../../assets/images/background.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .hero-title {
+      margin-top: 90px;
+      font-size: 50px;
+      font-weight: 700;
+      text-align: center;
+      span {
+        color: #ffa723;
+      }
+    }
+    .hero-position {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+
+      span {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    .hero-timer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
+      gap: 16px;
+
+      span {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 64px;
+      margin-bottom: 32px;
+      gap: 48px;
+
+      button {
+        width: 324px;
+        height: 96px;
+      }
+      .contact-us {
+        background: #ffa723;
+      }
+      .directions {
+        border: 4px solid $white;
+        background: transparent;
+      }
+    }
+  }
+  .photo-wrapper {
+    padding: 0px 56px 0 56px;
+
+    .slick-slider {
+      margin-top: 32px;
+
+      .slick-arrow {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid gray;
+
+        &::before{
+          display: none;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.slick-prev {
+          svg{
+            margin-right: 2px;
           }
         }
-        img {
-          width: 24px;
-          height: 24px;
-          cursor: pointer;
-          @media screen and (max-width: 767px) {
-            width: 16px;
-            height: 16px;
-          }
-        }
-        .splitter {
-          border-left: 1px solid $gray;
-          width: 1px;
-          height: 24px;
-          @media screen and (max-width: 767px) {
-            height: 16px;
+        &.slick-next {
+          svg{
+            margin-left: 2px;
           }
         }
       }
-      .card-below-section {
-        display: flex;
-        align-items: center;
+      .slick-slide {
+        .photo {
+          display: flex !important;
+          flex-direction: column;
+          margin: 32px;
 
-        .title {
-          font-size: 18px;
-          @media screen and (max-width: 767px) {
-            font-size: 12px;
-          }
-        }
-        .location {
-          color: $text-secondary;
-          margin-left: 30px;
-          position: relative;
-          font-size: 18px;
-          @media screen and (max-width: 767px) {
-            font-size: 12px;
-            margin-left: 20px;
-          }
+          &.first {
+            align-items: center;
 
-          &::before {
-            position: absolute;
-            content: "";
-            left: -15px;
-            top: 50%;
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background: $text-secondary;
-            transform: translate(0, -50%);
+            img {
+              width: 100%;
+            }
+            button {
+              margin-top: 64px;
+              background: #ffa723;
+              padding: 16px 32px;
+            }
           }
         }
       }
     }
-    .card-content {
-      .experience-section {
-        display: flex;
-        gap: 48px;
-        padding-top: 32px;
-        @media screen and (max-width: 767px) {
-          flex-direction: column;
-          gap: 16px;
-        }
+  }
+  .aboutus-wrapper{
+    margin: 96px 64px 64px 64px;
+    border-bottom: 1px dashed #535353;
+    h1{
+      font-size: 50px;
+      font-weight: 700;
+      text-align: center;
+    }
+    p{
+      margin-top: 56px;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+  .map-wrapper{
+    margin: 96px 64px 64px 64px;
 
-        span {
-          font-size: 16px;
-          font-style: italic;
-          min-width: 96px;
-          @media screen and (max-width: 767px) {
-            font-size: 12px;
-          }
-        }
-        .experience-wrapper {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-          .experience {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            position: relative;
-
-            &::before {
-              position: absolute;
-              content: "";
-              left: -25px;
-              top: 50%;
-              width: 10px;
-              height: 10px;
-              border-radius: 50%;
-              background: $gray;
-              transform: translate(0, -50%);
-            }
-            img {
-              width: 24px;
-              height: 24px;
-              @media screen and (max-width: 767px) {
-                width: 16px;
-                height: 16px;
-              }
-            }
-            span {
-              font-size: 16px;
-              font-style: normal;
-              white-space: nowrap;
-              overflow: hidden;
-              
-              @media screen and (max-width: 767px) {
-                font-size: 12px;
-                max-width: 240px;
-              }
-            }
-          }
-          .experience.isNotLast {
-            &::after {
-              position: absolute;
-              content: "";
-              left: -21px;
-              top: 20px;
-              width: 1px;
-              height: 25px;
-              background: $gray;
-              @media screen and (max-width: 767px) {
-                top: 15px;
-                height: 18px;
-              }
-            }
-          }
-        }
+    h1{
+      font-size: 45px;
+      font-weight: 700;
+      text-align: center;
+      span {
+        color: #FFA723
       }
+    }
+    p {
+      margin-top: 56px;
+      font-size: 25px;
+      text-align: center;
     }
   }
 }
