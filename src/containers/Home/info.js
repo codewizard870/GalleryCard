@@ -46,3 +46,34 @@ const Info = () => {
 }
 
 export default Info;
+
+const Schedule=[
+  {
+    day: "Mon",
+    time: "09:00–18:00"
+  },
+  {
+    day: "Tue",
+    time: "09:00–18:00"
+  },
+  {
+    day: "Wed",
+    time: "09:00–18:00"
+  },
+  {
+    day: "Thu",
+    time: "09:00–18:00"
+  },
+  {
+    day: "Fri",
+    time: "09:00–18:00"
+  },
+  {
+    day: "Sat",
+    time: "10:00–18:00"
+  },
+  {
+    day: "Sun",
+    time: "10:00–18:00 "
+  }
+]
