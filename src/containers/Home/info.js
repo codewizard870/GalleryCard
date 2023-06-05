@@ -25,17 +25,21 @@ const Info = () => {
         </a>
       </div>
       <div className="info-right-section">
-        <span>
+        <p>
           Business Hours<br />
-          <br />
-          Mon: 09:00 – 18:00<br />
-          Tue: 09:00 – 18:00<br />
-          Wed: 09:00 – 18:00<br />
-          Thu: 09:00 – 18:00<br />
-          Fri: 09:00 – 18:00<br />
-          Sat: 10:00 – 18:00<br />
-          Sun: 10:00 – 18:00<br />
-        </span>
+        </p>
+        <div className="schedule-wrapper">
+          {Schedule.map((s, index) => (
+            <div className="schedule">
+              <p key={index} className="day">
+                {`${s.day}:`}
+              </p>
+              <p>
+                {s.time}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

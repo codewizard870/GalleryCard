@@ -306,11 +306,35 @@
       }
     }
     .info-right-section {
-      span {
+      p {
         font-size: 24px;
         font-weight: 700;
+        margin-top: 0px;
+        margin-bottom: 0px;
         @media screen and (max-width: 767px) {
           font-size: 16px;
+        }
+      }
+      .schedule-wrapper {
+        margin-top: 24px;
+        @media screen and (max-width: 767px) {
+          margin-top: 16px;
+        }
+
+        .schedule {
+          display: flex;
+          gap: 10px;
+          height: 36px;
+
+          @media screen and (max-width: 767px) {
+            height: 24px;
+          }
+          .day {
+            width: 60px;
+            @media screen and (max-width: 767px) {
+              width: 48px;
+            }
+          }
         }
       }
     }
