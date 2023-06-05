@@ -48,6 +48,22 @@ const Photos = () => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 1900,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   return (

@@ -10,16 +10,27 @@
     padding: 8px 16px;
     background: $white;
     color: $black;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
 
     .navbar-logo-section {
       display: flex;
       align-items: center;
+
       img {
         width: 84px;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          width: 60px;
+        }
       }
       span {
         font-size: 25px;
         font-weight: 700;
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+        }
       }
     }
     .navbar-menu-section {
@@ -31,8 +42,11 @@
           color: $black;
           span {
             font-size: 24px;
+            @media screen and (max-width: 767px) {
+              font-size: 18px;
+            }
           }
-          &:hover{
+          &:hover {
             text-decoration: underline;
           }
         }
@@ -54,6 +68,9 @@
       span {
         color: #ffa723;
       }
+      @media screen and (max-width: 767px) {
+        font-size: 40px;
+      }
     }
     .hero-position {
       display: flex;
@@ -64,6 +81,9 @@
       span {
         font-size: 24px;
         font-weight: 700;
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+        }
       }
     }
     .hero-timer {
@@ -76,6 +96,9 @@
       span {
         font-size: 24px;
         font-weight: 700;
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+        }
       }
     }
     .hero-buttons {
@@ -84,10 +107,20 @@
       margin-top: 64px;
       margin-bottom: 32px;
       gap: 48px;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
 
       button {
         width: 324px;
         height: 96px;
+        @media screen and (max-width: 767px) {
+          width: 240px;
+          height: 80px;
+          font-size: 24px;
+        }
       }
       .contact-us {
         background: #ffa723;
@@ -100,7 +133,9 @@
   }
   .photo-wrapper {
     padding: 0px 56px 0 56px;
-
+    @media screen and (max-width: 767px) {
+      padding: 0px 24px 0 24px;
+    }
     .slick-slider {
       margin-top: 32px;
 
@@ -147,6 +182,12 @@
               margin-top: 64px;
               background: #ffa723;
               padding: 16px 32px;
+              @media screen and (max-width: 767px) {
+                margin-top: 32px;
+                font-size: 18px;
+                padding: 8px 16px;
+                border-radius: 10px;
+              }
             }
           }
         }
@@ -156,25 +197,41 @@
   .aboutus-wrapper {
     margin: 96px 64px 64px 64px;
     border-bottom: 1px dashed #535353;
+    @media screen and (max-width: 767px) {
+      margin: 48px 32px 32px 32px;
+    }
     h1 {
       font-size: 50px;
       font-weight: 700;
       text-align: center;
+      @media screen and (max-width: 767px) {
+        font-size: 36px;
+      }
     }
     p {
       margin-top: 56px;
       font-size: 25px;
       text-align: center;
+      @media screen and (max-width: 767px) {
+        margin-top: 32px;
+        font-size: 18px;
+      }
     }
   }
   .map-wrapper {
     margin: 96px 64px 64px 64px;
     border-bottom: 1px dashed #535353;
+    @media screen and (max-width: 767px) {
+      margin: 48px 32px 32px 32px;
+    }
 
     h1 {
       font-size: 45px;
       font-weight: 700;
       text-align: center;
+      @media screen and (max-width: 767px) {
+        font-size: 38px;
+      }
       span {
         color: #ffa723;
       }
@@ -183,12 +240,17 @@
       margin-top: 56px;
       font-size: 25px;
       text-align: center;
+      @media screen and (max-width: 767px) {
+        margin-top: 36px;
+        font-size: 18px;
+      }
     }
     .map {
       margin-top: 64px;
-      margin-left: 64px;
-      margin-right: 64px;
       height: 80vh;
+      @media screen and (max-width: 767px) {
+        height: 50vh;
+      }
     }
   }
   .info-wrapper {
@@ -196,6 +258,12 @@
     margin: 96px 128px 0px 128px;
     padding-bottom: 64px;
     gap: 156px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      margin: 48px 32px 32px 32px;
+      padding-bottom: 32px;
+      gap: 32px;
+    }
 
     .info-left-section {
       .location {
@@ -206,6 +274,9 @@
         span {
           font-size: 24px;
           font-weight: 700;
+          @media screen and (max-width: 767px) {
+            font-size: 16px;
+          }
         }
       }
       .instagram {
@@ -215,7 +286,12 @@
         margin-top: 36px;
 
         span {
+          font-size: 24px;
+          font-weight: 700;
           text-transform: capitalize;
+          @media screen and (max-width: 767px) {
+            font-size: 16px;
+          }
         }
       }
       .find-us {
@@ -223,12 +299,19 @@
         border: 4px solid $white;
         background: transparent;
         padding: 16px 48px;
+        @media screen and (max-width: 767px) {
+          font-size: 18px;
+          padding: 8px 24px;
+        }
       }
     }
     .info-right-section {
       span {
         font-size: 24px;
         font-weight: 700;
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+        }
       }
     }
   }
